@@ -1,13 +1,15 @@
 import React from "react"
+import "./style.css"
 
 class Header extends React.Component {
 
 
   render() {
     const {country, name, logo} = this.props
-    return <div className="hej">
-      <div><h1>{name}</h1></div>
-      <div>{country}</div>
+    return <div className="headercontainer">
+      <div className="companyname"><h1>{name}</h1></div>
+      <div className="country">{country}</div>
+      <div><img className="logo image" src={logo && logo[0].url} alt="business logotype"/></div>
     </div>
   }
 

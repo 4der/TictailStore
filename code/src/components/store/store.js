@@ -28,13 +28,15 @@ class Store extends React.Component {
 
   render() {
     const {store} = this.state
-    console.log(this.state.store, "store")
+    console.log(store.logotype, 'store.logotype');
+    console.log(store.name, 'store.name');
     return (
       <div className="hej">
 
             <Header
             name={store.name}
             country={store.country}
+            logo={store.logotype}
           />
 
         </div>

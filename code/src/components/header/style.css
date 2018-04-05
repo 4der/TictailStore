@@ -1,0 +1,28 @@
+
+
+  .headercontainer {
+    display: flex;
+    flex-flow: row wrap;
+  }
+
+  .logo {
+    width: 100%;
+    position: fixed;
+    padding-top: 100px;
+    position: relative;
+    height:auto;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    text-align: center;
+  }
+
+
+.companyname {
+  font-size: 50px;
+  font-family: monospace;
+}
+
+.country {
+  font-size: 10px;
+}
