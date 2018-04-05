@@ -32,7 +32,8 @@ class Products extends React.Component {
           {this.state.products.map((product) => {
             return <Product
               title={product.title}
-              price={product.price} />
+              price={product.price}
+              images={product.images} />
             })}
         </div>
 
