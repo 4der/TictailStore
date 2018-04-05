@@ -1,5 +1,6 @@
 import React from "react"
 import Product from "../product/product"
+import "./style.css"
 
 class Products extends React.Component {
 
@@ -27,14 +28,17 @@ class Products extends React.Component {
 
   render() {
     return (
-      <div className="products-container">
+      <div>
           <h1>hej</h1>
+
+          <div className="products-container">
           {this.state.products.map((product) => {
             return <Product
               title={product.title}
               price={product.price}
               images={product.images} />
             })}
+            </div>
         </div>
 
     )
