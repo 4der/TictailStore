@@ -1,15 +1,15 @@
 import React from "react"
 
-class App extends React.Component {
+class Product extends React.Component {
+
 
   render() {
     return (
       <div>
-        Find me in src/app.js!
+        Product!
       </div>
     )
   }
-
 }
 
-export default App
+export default Product
