@@ -1,9 +1,36 @@
+/* @font-face {
+    font-family: "CircularStd-Bold.woff";
+    src: url(".../CircularStd-Bold.woff") format('woff');
+    font-weight: bold;
+} */
+
 .product-box {
+  display: flex;
+  flex-flow: column;
+  align-content: flex-start;
+  justify-content: space-around;
   border: 1px solid black;
   width: 300px;
   margin: 20px;
+  padding: 20px;
 }
 
 .product-img {
-  width: 300px;
+  width: 100%;
+  margin: 0;
+}
+
+.product-title {
+  font-family: 'Cutive Mono', monospace;
+  font-size: 20px;
+}
+
+.add-to-bag-button {
+  background-color: #fab;
+  width: 100px;
+  height: 30px;
+  border-radius: 3px;
+  font-family: 'Cutive Mono', monospace;
+  font-size: 12px;
+  border: none;
 }
