@@ -31,11 +31,11 @@ class Store extends React.Component {
     console.log(this.state.store, "store")
     return (
       <div className="hej">
-          <h1>hej</h1>
 
             <Header
             name={store.name}
-            country={store.country} />
+            country={store.country}
+          />
 
         </div>
     )
