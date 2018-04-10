@@ -9,13 +9,14 @@ import ProductPage from "./productPage/productPage"
 import CategoryPage from "./categoryPage/categoryPage"
 import Footer from "./footer/footer"
 
-
 class App extends React.Component {
 
   render() {
     return (
       <BrowserRouter>
         <div>
+          <Store />
+          
           <div className="categoriesContainer">
             <div><Link to="/">Home</Link></div>
             <div><Link to="/categories/shoes">Shoes</Link></div>
@@ -25,7 +26,7 @@ class App extends React.Component {
 
           <Route exact path="/" component={Home} />
 
-          <Store />
+
           <Categories />
           <Products />
 
