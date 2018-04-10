@@ -25,11 +25,11 @@ class App extends React.Component {
             <div><Link to="/categories/shirts">Shirts</Link></div>
           </div>
 
-          <Route exact path="/" component={Home} />
+        
+          <Route exact path="/" component={Products} />
 
 
           <Categories />
-          <Products />
 
           <Footer />
         </div>
