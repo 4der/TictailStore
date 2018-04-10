@@ -1,32 +1,32 @@
 .footerInfo {
   color: grey;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: space-around;
-    padding-top: 35px;
-    padding-bottom: 35px;
-    padding-left: 35px;
-    width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  padding-top: 35px;
+  padding-bottom: 35px;
+  padding-left: 35px;
+  width: 100%;
 }
 
 .footer {
-    padding-top: 35px;
-    width: 100%;
+  padding-top: 35px;
+  width: 100%;
 }
 
 ul {
-    padding: 0px;
-    list-style-type: none;
+  padding: 0px;
+  list-style-type: none;
 }
 
 h4 {
-    color: #4c4c4c;
-    font-size: 14px;
+  color: #4c4c4c;
+  font-size: 14px;
 }
 
 footer {
-    font-size: 13px;
-    line-height: 1.7;
-    width: 100%;
+  font-size: 13px;
+  line-height: 1.7;
+  width: 100%;
 }

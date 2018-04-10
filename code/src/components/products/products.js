@@ -29,7 +29,7 @@ class Products extends React.Component {
   render() {
     return (
       <div>
-          <h1>hej</h1>
+          
 
           <div className="products-container">
           {this.state.products.map((product) => {
