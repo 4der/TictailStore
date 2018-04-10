@@ -14,31 +14,24 @@ class App extends React.Component {
 
   render() {
     return (
-
-<BrowserRouter>
-      <div>
-
-      <div className="categoriesContainer">
-              <div><Link to="/">Home</Link></div>
-
-              <div><Link to="/categories/shoes">Shoes</Link></div>
-              <div><Link to="/categories/jewelry">Jewelry</Link></div>
-              <div><Link to="/categories/shirts">Shirts</Link></div>
+      <BrowserRouter>
+        <div>
+          <div className="categoriesContainer">
+            <div><Link to="/">Home</Link></div>
+            <div><Link to="/categories/shoes">Shoes</Link></div>
+            <div><Link to="/categories/jewelry">Jewelry</Link></div>
+            <div><Link to="/categories/shirts">Shirts</Link></div>
           </div>
 
-             <Route exact path="/" component={Home} />
-             
-        <Store />
-        <Categories />
-        <Products />
+          <Route exact path="/" component={Home} />
 
+          <Store />
+          <Categories />
+          <Products />
 
-        <Footer />
-
-
-
-      </div>
-</BrowserRouter>
+          <Footer />
+        </div>
+      </BrowserRouter>
     )
   }
 

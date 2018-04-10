@@ -1,14 +1,17 @@
+@font-face {
+  font-family: "URWGeometric-Bold.woff";
+  src: url("/URWGeometric-Bold.woff") format("woff");
+}
+
   .headercontainer {
     display: flex;
-    flex-flow: row wrap;
+    flex-flow: column;
+    text-align: center;
   }
 
   .logo {
-    width: 100%;
-    position: fixed;
+    width: 200px;
     padding-top: 100px;
-    position: relative;
-    height:auto;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -18,7 +21,7 @@
 
 .companyname {
   font-size: 50px;
-  font-family: monospace;
+  font-family: "URWGeometric-Bold.woff";
 }
 
 .country {

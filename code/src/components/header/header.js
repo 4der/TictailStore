@@ -7,8 +7,7 @@ class Header extends React.Component {
   render() {
     const {country, name, logo} = this.props
     return <div className="headercontainer">
-      <div className="companyname"><h1>{name}</h1></div>
-      <div className="country">{country}</div>
+      <div className="companyname">{name}</div>
       <div><img className="logo image" src={logo && logo[0].url} alt="business logotype"/></div>
     </div>
   }
