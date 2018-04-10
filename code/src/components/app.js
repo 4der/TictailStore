@@ -18,16 +18,14 @@ class App extends React.Component {
         <div>
           <Store />
 
-          <div className="categoriesContainer">
+          <div className="categories-Container">
             <div><Link to="/">Home</Link></div>
             <div><Link to="/categories/shoes">Shoes</Link></div>
             <div><Link to="/categories/jewelry">Jewelry</Link></div>
             <div><Link to="/categories/shirts">Shirts</Link></div>
           </div>
 
-        
           <Route exact path="/" component={Products} />
-
 
           <Categories />
 

@@ -1,6 +1,6 @@
 import React from "react"
 import Header from "../header/header"
-import coolgal from "../../images/coolgal.jpg"
+
 
 class Store extends React.Component {
 
@@ -29,18 +29,14 @@ class Store extends React.Component {
 
   render() {
     const {store} = this.state
-    console.log(store.logotype, 'store.logotype');
-    console.log(store.name, 'store.name');
     return (
-      <div className="header">
+      <div>
         <Header
           name={store.name}
           country={store.country}
           logo={store.logotype}
         />
-        <div className="hero-img">
-          <img src={coolgal} alt="hello" />
-        </div>
+
         </div>
     )
   }
