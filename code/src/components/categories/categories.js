@@ -28,11 +28,6 @@ class Categories extends React.Component {
   render() {
     return (
       <div className="sidebar">
-
-        {this.state.categories.map((category) => {
-          return <Sidebar
-            title={category.title} />
-        })}
       </div>
 
     )
