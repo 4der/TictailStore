@@ -16,7 +16,7 @@ class App extends React.Component {
       <BrowserRouter>
         <div>
           <Store />
-          
+
           <div className="categoriesContainer">
             <div><Link to="/">Home</Link></div>
             <div><Link to="/categories/shoes">Shoes</Link></div>
@@ -24,11 +24,11 @@ class App extends React.Component {
             <div><Link to="/categories/shirts">Shirts</Link></div>
           </div>
 
-          <Route exact path="/" component={Home} />
+        
+          <Route exact path="/" component={Products} />
 
 
           <Categories />
-          <Products />
 
           <Footer />
         </div>
