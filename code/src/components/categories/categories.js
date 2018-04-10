@@ -27,7 +27,7 @@ class Categories extends React.Component {
   }
   render() {
     return (
-      <div className="sidebar">
+      <div>
       </div>
 
     )

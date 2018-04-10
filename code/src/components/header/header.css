@@ -6,10 +6,9 @@
   .header-container {
     display: flex;
     flex-flow: row;
-    justify-content: space-around;
+    justify-content: space-between;
     text-align: center;
     align-items: center;
-    margin: 30px 100px;
     width: 100%;
   }
 
@@ -21,11 +20,6 @@
     text-align: center;
   }
 
-.hero-img img {
-  width: 100%;
-  background-size: cover;
-}
-
 .bag-img img {
   width: 20px;
 }
@@ -34,6 +28,11 @@
   margin: 0;
   padding: 0;
   width: 20px;
+}
+
+.hero-img img {
+  width: 100%;
+  background-size: cover;
 }
 
 .companyname {
