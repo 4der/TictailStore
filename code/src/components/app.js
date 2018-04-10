@@ -17,14 +17,11 @@ class App extends React.Component {
 <BrowserRouter>
       <div>
 
-
-
-
         <Store />
         <Categories />
         <Products />
 
-
+      
 
       </div>
 </BrowserRouter>
