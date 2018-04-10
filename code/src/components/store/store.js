@@ -1,18 +1,19 @@
 import React from "react"
 import Header from "../header/header"
+import coolgal from "../../images/coolgal.jpg"
 
 class Store extends React.Component {
 
   constructor(props) {
     super(props)
     this.state = {
-      store:{}
+      store: {}
     }
   }
 
-    componentDidMount() {
-      this.fetchData()
-    }
+  componentDidMount() {
+    this.fetchData()
+  }
 
   fetchData = () => {
     fetch("https://api.tictail.com/v1.26/stores/5HSF").then((response) => {
@@ -31,14 +32,15 @@ class Store extends React.Component {
     console.log(store.logotype, 'store.logotype');
     console.log(store.name, 'store.name');
     return (
-      <div className="hej">
-
-            <Header
-            name={store.name}
-            country={store.country}
-            logo={store.logotype}
-          />
-
+      <div className="header">
+        <Header
+          name={store.name}
+          country={store.country}
+          logo={store.logotype}
+        />
+        <div className="hero-img">
+          <img src={coolgal} alt="hello" />
+        </div>
         </div>
     )
   }
