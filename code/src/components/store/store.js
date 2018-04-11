@@ -33,7 +33,6 @@ class Store extends React.Component {
       <div>
         <Header
           name={store.name}
-          country={store.country}
           logo={store.logotype}
         />
 
