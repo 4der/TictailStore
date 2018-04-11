@@ -2,6 +2,10 @@
   font-family: "URWGeometric-Bold.woff";
   src: url("/URWGeometric-Bold.woff") format("woff");
 }
+a  {
+  text-decoration: none;
+  color: black;
+}
 
 .header-container {
   display: flex;
@@ -10,7 +14,7 @@
   text-align: center;
   align-items: center;
   width: 100%;
-  padding: 20px 80px;
+  padding: 20px 80px 10px;
 }
 
 .logo {
@@ -35,7 +39,7 @@
 .bag-img {
   margin: 0;
   padding: 0;
-  width: 20px;
+  width: 50px;
 }
 
 .hero-img img {
@@ -43,13 +47,54 @@
   background-size: cover;
   position: relative;
 }
+
 .hero-container {
   width: 100%;
   position: relative;
 }
+
 .categories-container {
+  display: flex;
+  flex-flow: column;
+  text-align: center;
   width: 100%;
   padding: 0 80px;
   position: absolute;
-  top: 20px;
+  top: 250px;
+}
+
+.category-txt {
+  font-family: "URWGeometric-Bold.woff";
+  font-size: 40px;
+}
+
+.category-txt-container {
+  display: flex;
+  flex-flow: row;
+  width: 100%;
+  justify-content: space-between;
+  padding: 0 400px;
+}
+
+.shop-headline {
+  font-family: "URWGeometric-Bold.woff";
+  font-size: 200px;
+  color: white;
+}
+
+.shop-headline:hover {
+  animation: textanimation 0.8s ease infinite;
+  cursor: crosshair;
+}
+
+@keyframes textanimation {
+  25%  {
+    color:#16F4D0;
+    background-position:0% 50%;}
+  50%  {
+    color:#FF8A5B;
+    background-position:100% 50%;}
+  100% {
+    color:#16F4D0;
+    background-position:0% 50%;}
 }

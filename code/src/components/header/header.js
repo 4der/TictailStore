@@ -2,7 +2,7 @@ import React from "react"
 import { BrowserRouter, Route, Link } from "react-router-dom"
 import "./header.css"
 import coolgal from "../../images/coolgal.jpg"
-import bag from "../../images/bag.png"
+import shoppingbag from "../../images/shoppingbag.jpg"
 
 class Header extends React.Component {
 
@@ -11,11 +11,11 @@ class Header extends React.Component {
     const {country, name, logo} = this.props
     return <div>
       <div className="header-container">
-        <div className="companyname">{name}</div>
+        <Link to="/"><div className="companyname">{name}</div></Link>
         <div><img className="logo image" src={logo && logo[0].url} alt="business logotype"/></div>
 
         <div className="bag-img">
-          <img src={bag} alt="put your stuff here!" />
+          <img src={shoppingbag} alt="put your stuff here!" />
         </div>
       </div>
 
@@ -25,13 +25,14 @@ class Header extends React.Component {
         </div>
 
         <div className="categories-container">
-          <div><Link to="/">Home</Link></div>
-          <div><Link to="/categories/shoes">Shoes</Link></div>
-          <div><Link to="/categories/jewelry">Jewelry</Link></div>
-          <div><Link to="/categories/shirts">Shirts</Link></div>
+          <div className="shop-headline">Look out <br /> for the news</div>
+          <div className="category-txt-container">
+            <div className="category-txt"><Link to="/categories/shoes">Shoes</Link></div>
+            <div className="category-txt"><Link to="/categories/jewelry">Jewelry</Link></div>
+            <div className="category-txt"><Link to="/categories/shirts">Shirts</Link></div>
+          </div>
         </div>
       </div>
-
     </div>
   }
 
