@@ -3,9 +3,7 @@
   src: url("/URWGeometric-Bold.woff") format("woff");
 }
 
-p {
-
-}
+p {}
 
 .Box {
   display: flex;
@@ -20,13 +18,12 @@ p {
   width: 70%;
   height: auto;
   margin: 20px;
-  }
+}
 
 .content {
   display: flex;
   flex-direction: column;
   margin: 10px;
-
 }
 
 .prodImg img {
@@ -34,7 +31,6 @@ p {
   height: auto;
   margin: 10px;
 }
-
 
 .productTitle {
   font-family: "URWGeometric-Bold.woff";
