@@ -20,7 +20,9 @@ class ProductPage extends React.Component {
       this.setState({product: product})
     })
   }
-
+  createMarkup() {
+    return {__html: this.state.product && this.state.product.description}
+  }
   render() {
     return <div className="Box">
     <div className="prodBox">
@@ -30,9 +32,7 @@ class ProductPage extends React.Component {
       <div className="content">
       <div className="productTitle">{this.state.product &&  this.state.product.title}</div>
       <div><p>{this.state.product &&  this.state.product.price / 100} SEK</p></div>
-
-    <div className="productInfo"><p>{this.state.product && this.state.product.description}</p></div>
-
+      <div className="productInfo" dangerouslySetInnerHTML={this.createMarkup()} />
       <div>
         <button className="addButton">Add to bag</button>
       </div>
