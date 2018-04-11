@@ -27,7 +27,7 @@ class ProductPage extends React.Component {
         <img className="product-img" src={this.state.product && this.state.product.images[0].url} alt="photos" />
       </div>
       <div className="product-title">{this.state.product &&  this.state.product.title}</div>
-      <div><p>{this.state.product &&  this.state.product.price / 100} KR</p></div>
+      <div><p>{this.state.product &&  this.state.product.price / 100} SEK</p></div>
 
     <div className="product-info"><p>{this.state.product && this.state.product.description}</p></div>
 
