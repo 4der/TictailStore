@@ -4,7 +4,6 @@ import Products from "./products/products"
 import Home from "../Pages/home"
 // import Category from "../Pages/category"
 import Store from "./store/store"
-import Categories from "./categories/categories"
 import ProductPage from "./productPage/productPage"
 import CategoryPage from "./categoryPage/categoryPage"
 import Footer from "./footer/footer"
@@ -28,7 +27,6 @@ class App extends React.Component {
           <Route path="/categories/:category" component={Products} />
           <Route path="/product/:productId" component={ProductPage} />
 
-          <Categories />
 
           <Footer />
         </div>
