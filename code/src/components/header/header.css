@@ -14,7 +14,6 @@ a  {
   text-align: center;
   align-items: center;
   width: 100%;
-  padding: 20px 80px 10px;
 }
 
 .logo {
@@ -66,9 +65,9 @@ a  {
   flex-flow: column;
   text-align: center;
   width: 100%;
-  padding: 0 80px;
+  /* padding: 0 80px; */
   position: absolute;
-  top: 250px;
+  top: 0px;
 }
 
 .category-txt {
@@ -81,12 +80,12 @@ a  {
   flex-flow: row;
   width: 100%;
   justify-content: space-between;
-  padding: 0 400px;
+  padding: 0px 100px 0px 100px;
 }
 
 .shop-headline {
   font-family: "URWGeometric-Bold.woff";
-  font-size: 200px;
+  font-size: 15vw;
   color: white;
 }
 
@@ -107,12 +106,24 @@ a  {
   cursor: crosshair;
 }
 
+@media (min-width: 600px) and (max-width: 900px) {
+  .categories-container {
 
-@media (min-width: 601px) and (max-width: 900px) {
-  .hero-tablet-img img {
-    display: none;
   }
 
+  .shop-headline {
+    font-size: 15vw;
+  }
+
+  .category-txt-container {
+    padding: 0 10px;
+  }
+  .category-txt {
+    font-size: 30px;
+  }
+}
+
+/* @media (min-width: 600px) and (max-width: 900px) {
   .hero-desktop-img {
     background-size: cover;
     width: 100%;
@@ -134,16 +145,16 @@ a  {
 
   .shop-headline {
     font-size: 70px;
-    /* line-height: 30px; */
+    line-height: 30px;
   }
-}
+} */
 
 
 
 /* responsive mobile */
 
 @media (max-width: 600px) {
-  
+
   .hero-desktop-img img, .hero-tablet-img {
     display: none;
   }
@@ -174,18 +185,18 @@ a  {
   }
 }
 
-@media (max-width: 580px) {
-
+@media (max-width: 600px) {
 
   .shop-headline {
-    font-size: 70px;
+    font-size: 50px;
   }
 
   .category-txt-container {
-    padding: 0 10px;
   }
   .category-txt {
     font-size: 30px;
+    margin-right: 10px;
+    text-align: center;
   }
 
 }
