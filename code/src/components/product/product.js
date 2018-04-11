@@ -10,7 +10,7 @@ class Product extends React.Component {
         <img className="product-img" src={this.props.images[0].url} alt="photos" />
       </div>
       <div className="product-title">{this.props.title}</div>
-      <div><p>{this.props.price / 100}</p></div>
+      <div><p>{this.props.price / 100} SEK</p></div>
 
       <div>
         <button className="add-to-bag-button">Add to bag</button>
