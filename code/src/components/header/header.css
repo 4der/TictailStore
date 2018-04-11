@@ -3,22 +3,30 @@
   src: url("/URWGeometric-Bold.woff") format("woff");
 }
 
-  .header-container {
-    display: flex;
-    flex-flow: row;
-    justify-content: space-between;
-    text-align: center;
-    align-items: center;
-    width: 100%;
-  }
+.header-container {
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+  text-align: center;
+  align-items: center;
+  width: 100%;
+  padding: 20px 80px;
+}
 
-  .logo {
-    width: 150px;
-    margin-top: 20px;
-    background-position: center;
-    background-repeat: no-repeat;
-    text-align: center;
-  }
+.logo {
+  width: 150px;
+  margin-top: 20px 0px;
+  background-position: center;
+  background-repeat: no-repeat;
+  text-align: center;
+}
+
+.companyname {
+  font-size: 25px;
+  font-family: "URWGeometric-Bold.woff";
+  margin-left: 0px;
+  padding: 0;
+}
 
 .bag-img img {
   width: 20px;
@@ -33,13 +41,15 @@
 .hero-img img {
   width: 100%;
   background-size: cover;
+  position: relative;
 }
-
-.companyname {
-  font-size: 30px;
-  font-family: "URWGeometric-Bold.woff";
+.hero-container {
+  width: 100%;
+  position: relative;
 }
-
-.country {
-  font-size: 10px;
+.categories-container {
+  width: 100%;
+  padding: 0 80px;
+  position: absolute;
+  top: 20px;
 }
