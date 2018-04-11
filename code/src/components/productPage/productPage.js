@@ -22,17 +22,21 @@ class ProductPage extends React.Component {
   }
 
   render() {
-    return <div className="product-box">
-      <div>
+    return <div className="Box">
+    <div className="prodBox">
+      <div className="prodImg">
         <img className="product-img" src={this.state.product && this.state.product.images[0].url} alt="photos" />
       </div>
-      <div className="product-title">{this.state.product &&  this.state.product.title}</div>
+      <div className="content">
+      <div className="productTitle">{this.state.product &&  this.state.product.title}</div>
       <div><p>{this.state.product &&  this.state.product.price / 100} SEK</p></div>
 
-    <div className="product-info"><p>{this.state.product && this.state.product.description}</p></div>
+    <div className="productInfo"><p>{this.state.product && this.state.product.description}</p></div>
 
       <div>
-        <button className="add-to-bag-button">Add to bag</button>
+        <button className="addButton">Add to bag</button>
+      </div>
+      </div>
       </div>
     </div>
   }

@@ -1,0 +1,56 @@
+@font-face {
+  font-family: "URWGeometric-Bold.woff";
+  src: url("/URWGeometric-Bold.woff") format("woff");
+}
+
+p {
+
+}
+
+.Box {
+  display: flex;
+  justify-content: center;
+}
+
+.prodBox {
+  display: flex;
+  flex-flow: row;
+  align-items: center;
+  border: 1px solid black;
+  width: 70%;
+  height: auto;
+  margin: 20px;
+  }
+
+.content {
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+
+}
+
+.prodImg img {
+  width: 70%;
+  height: auto;
+  margin: 10px;
+}
+
+
+.productTitle {
+  font-family: "URWGeometric-Bold.woff";
+}
+
+.productInfo {
+  font-family: "URWGeometric-Bold.woff";
+}
+
+.addButton {
+  background-color: #fab;
+  width: 100px;
+  height: 30px;
+  border-radius: 3px;
+  font-family: "URWGeometric-Bold.woff";
+  font-size: 12px;
+  border: none;
+  cursor: pointer;
+}
