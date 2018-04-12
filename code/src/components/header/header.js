@@ -8,13 +8,12 @@ import shoppingbag from "../../images/shoppingbag.jpg"
 
 class Header extends React.Component {
 
-
   render() {
-    const {country, name, logo} = this.props
+    const { name, logo } = this.props
     return <div>
       <div className="header-container">
         <Link to="/"><div className="companyname">{name}</div></Link>
-        <div><img className="logo image" src={logo && logo[0].url} alt="business logotype"/></div>
+        <div><img className="logo image" src={logo && logo[0].url} alt="business logotype" /></div>
 
         <div className="bag-img">
           <img src={shoppingbag} alt="put your stuff here!" />

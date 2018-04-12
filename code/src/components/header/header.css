@@ -14,6 +14,8 @@ a  {
   text-align: center;
   align-items: center;
   width: 100%;
+  margin: 20px;
+  padding: 0 80px;
 }
 
 .logo {
@@ -67,7 +69,7 @@ a  {
   width: 100%;
   /* padding: 0 80px; */
   position: absolute;
-  top: 0px;
+  top: 80px;
 }
 
 .category-txt {
@@ -87,6 +89,7 @@ a  {
   font-family: "URWGeometric-Bold.woff";
   font-size: 15vw;
   color: white;
+  margin-bottom: 70px;
 }
 
 @keyframes textanimation {
@@ -107,9 +110,6 @@ a  {
 }
 
 @media (min-width: 600px) and (max-width: 900px) {
-  .categories-container {
-
-  }
 
   .shop-headline {
     font-size: 15vw;
