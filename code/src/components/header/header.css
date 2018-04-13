@@ -81,7 +81,6 @@ a  {
   flex-flow: column;
   text-align: center;
   width: 100%;
-  /* padding: 0 80px; */
   position: absolute;
   top: 80px;
 }
@@ -136,33 +135,6 @@ a  {
     font-size: 30px;
   }
 }
-
-/* @media (min-width: 600px) and (max-width: 900px) {
-  .hero-desktop-img {
-    background-size: cover;
-    width: 100%;
-    display: block;
-  }
-  .hero-desktop-img img {
-    background-size: cover;
-    width: 100%;
-  }
-
-  .categories-container {
-    padding: 0 0px;
-    top: 250px;
-  }
-
-  .categories-txt-container {
-
-  }
-
-  .shop-headline {
-    font-size: 70px;
-    line-height: 30px;
-  }
-} */
-
 
 
 /* responsive mobile */

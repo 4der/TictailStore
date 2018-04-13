@@ -11,10 +11,8 @@ class Header extends React.Component {
   render() {
     // https://tictail.com/checkout?cart_token=${token}
     if (!this.props.cart.items) return null
-    console.log(this.props)
     const { name, logo, cart } = this.props
     const token = cart.token
-    console.log(cart)
     return (
       <div>
         <div className="header-container">
@@ -22,13 +20,13 @@ class Header extends React.Component {
           <div><img className="logo image" src={logo && logo[0].url} alt="business logotype" /></div>
 
           <a href={`https://tictail.com/checkout?cart_token=${token}`}>
-          <div className="shopping-cart">
-            <div className="cart-img">
-              <img src={shoppingbag} alt="put your stuff here!" />
+            <div className="shopping-cart">
+              <div className="cart-img">
+                <img src={shoppingbag} alt="put your stuff here!" />
+              </div>
+              <div className="count-items">{this.props.cart.items.length}</div>
             </div>
-            <div className="count-items">{this.props.cart.items.length}</div>
-          </div>
-        </a>
+          </a>
         </div>
 
         <div className="hero-container">

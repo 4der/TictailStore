@@ -42,7 +42,6 @@ class Products extends React.Component {
       this.setState({
         products: filteredProducts
       })
-      console.log(products)
     })
   }
 

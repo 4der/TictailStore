@@ -25,7 +25,6 @@ class Product extends React.Component {
           <button className="add-to-bag-button">ADD TO BAG</button>
         </div>
 
-
       </div>
     )
   }

@@ -22,7 +22,6 @@ class Store extends React.Component {
       this.setState({
         store: store
       })
-      console.log(store)
     })
   }
 

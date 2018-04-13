@@ -4,7 +4,7 @@ import Products from "../products/products"
 
 class ProductPage extends React.Component {
   state = {
-    product: null,
+    product: null
   }
 
   componentDidMount() {
@@ -21,7 +21,7 @@ class ProductPage extends React.Component {
     })
   }
   createMarkup() {
-    return {__html: this.state.product && this.state.product.description}
+    return { __html: this.state.product && this.state.product.description }
   }
 
   goToCheckout = () => {
@@ -29,7 +29,6 @@ class ProductPage extends React.Component {
     const productId = this.state.product.id
     const variationId = this.state.product.variations[0].id
     const token = this.props.token
-    console.log(productId, variationId)
 
     return fetch(`https://api.tictail.com/v1.26/carts/${token}/items`, {
       method: "POST",
@@ -42,16 +41,15 @@ class ProductPage extends React.Component {
         "content-type": "application/json"
       }
     })
-    .then((response) => {
-      console.log(response);
+      .then((response) => {
       return response.json()
     })
     .then((json) => {
     this.props.updateCart()
     })
-    .catch(error => {
+      .catch(error => {
       console.log(error)
-    })
+      })
   }
   render() {
     return (
