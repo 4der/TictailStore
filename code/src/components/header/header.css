@@ -33,14 +33,28 @@ a  {
   padding: 0;
 }
 
-.bag-img img {
-  width: 20px;
+.shopping-cart img {
+  width: 30px;
 }
 
-.bag-img {
+.cart-img {
+  width: 30px;
+  height: 30px;
+}
+.shopping-cart {
   margin: 0;
   padding: 0;
   width: 50px;
+  position: relative;
+}
+
+.count-items {
+  position: absolute;
+  top: 14px;
+  width: 30px;
+  height: 30px;
+  font-family: "URWGeometric-Bold.woff";
+  font-size: 12px;
 }
 
 .hero-desktop-img {

@@ -29,11 +29,13 @@ class Store extends React.Component {
 
   render() {
     const {store} = this.state
+    const { cart } = this.props
     return (
       <div>
         <Header
           name={store.name}
           logo={store.logotype}
+          cart={cart}
         />
 
         </div>

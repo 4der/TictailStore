@@ -23,6 +23,36 @@ class ProductPage extends React.Component {
   createMarkup() {
     return {__html: this.state.product && this.state.product.description}
   }
+
+  goToCheckout = () => {
+    console.log(this.state.product)
+    const productId = this.state.product.id
+    const variationId = this.state.product.variations[0].id
+    const token = this.props.token
+    console.log(productId, variationId)
+
+    return fetch(`https://api.tictail.com/v1.26/carts/${token}/items`, {
+      method: "POST",
+      body: JSON.stringify({
+        product_id: productId,
+        variation_id: variationId,
+        quantity: 1
+      }),
+      headers: {
+        "content-type": "application/json"
+      }
+    })
+    .then((response) => {
+      console.log(response);
+      return response.json()
+    })
+    .then((json) => {
+    this.props.updateCart()
+    })
+    .catch(error => {
+      console.log(error)
+    })
+  }
   render() {
     return <div className="Box">
     <div className="prodBox">
@@ -34,7 +64,7 @@ class ProductPage extends React.Component {
       <div><p>{this.state.product &&  this.state.product.price / 100} SEK</p></div>
       <div className="productInfo" dangerouslySetInnerHTML={this.createMarkup()} />
       <div>
-        <button className="addButton">Add to bag</button>
+        <button onClick={this.goToCheckout} className="addButton">Add to bag</button>
       </div>
       </div>
       </div>
