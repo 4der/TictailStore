@@ -14,39 +14,59 @@ p {}
   display: flex;
   flex-flow: row;
   align-items: center;
+  justify-content: space-between;
   border: 1px solid black;
   width: 70%;
   height: auto;
-  margin: 20px;
+  margin: 50px 20px;
 }
 
 .content {
   display: flex;
   flex-direction: column;
-  margin: 10px;
+  justify-content: space-between;
+  margin: 20px;
+  width: 50%;
+  height: 100%;
+  padding: 23px;
 }
-
+.prodImg {
+  width: 50%;
+  margin: 20px;
+}
 .prodImg img {
-  width: 70%;
+  width: 100%;
   height: auto;
-  margin: 10px;
 }
 
 .productTitle {
   font-family: "URWGeometric-Bold.woff";
+  font-size: 50px;
+}
+.productPrice {
+  font-family: "URWGeometric-Bold.woff";
+  font-size: 50px;
 }
 
 .productInfo {
   font-family: "URWGeometric-Bold.woff";
+  font-size: 20px;
 }
-
-.addButton {
+.productInfoContainer {
+  display: flex;
+  justify-content: space-around;
+  flex-flow: column;
+  align-items: center;
+  height: 100%;
+}
+.add-to-bag-button-big {
   background-color: #fab;
-  width: 100px;
-  height: 30px;
+  width: 100%;
+  height: 40px;
   border-radius: 3px;
   font-family: "URWGeometric-Bold.woff";
-  font-size: 12px;
+  font-size: 16px;
+  padding-top: 7px;
   border: none;
   cursor: pointer;
 }

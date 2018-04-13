@@ -54,22 +54,29 @@ class ProductPage extends React.Component {
     })
   }
   render() {
-    return <div className="Box">
-    <div className="prodBox">
-      <div className="prodImg">
-        <img className="product-img" src={this.state.product && this.state.product.images[0].url} alt="photos" />
-      </div>
-      <div className="content">
-      <div className="productTitle">{this.state.product &&  this.state.product.title}</div>
-      <div><p>{this.state.product &&  this.state.product.price / 100} SEK</p></div>
-      <div className="productInfo" dangerouslySetInnerHTML={this.createMarkup()} />
-      <div>
-        <button onClick={this.goToCheckout} className="addButton">Add to bag</button>
-      </div>
-      </div>
+    return (
+     <div className="Box">
+      <div className="prodBox">
+
+        <div className="prodImg">
+          <img className="product-img" src={this.state.product && this.state.product.images[0].url} alt="photos" />
+        </div>
+
+        <div className="content">
+            <div className="productInfoContainer">
+              <div className="productTitle">{this.state.product &&  this.state.product.title}</div>
+              <div><p  className="productPrice">{this.state.product &&  this.state.product.price / 100} SEK</p></div>
+              <div className="productInfo" dangerouslySetInnerHTML={this.createMarkup()} />
+            </div>
+
+            <div>
+              <button onClick={this.goToCheckout} className="add-to-bag-button-big">Add to bag</button>
+            </div>
+        </div>
+
       </div>
     </div>
-  }
+    )}
 }
 
 export default ProductPage
