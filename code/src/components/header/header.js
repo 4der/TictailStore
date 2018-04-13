@@ -20,7 +20,7 @@ class Header extends React.Component {
           <Link to="/"><div className="companyname">{name}</div></Link>
           <div><img className="logo image" src={logo && logo[0].url} alt="business logotype" /></div>
 
-          <a href="https://tictail.com/checkout?cart_token=${token}">
+          <a href='https://tictail.com/checkout?cart_token/=${token}'>
           <div className="shopping-cart">
             <div className="cart-img">
               <img src={shoppingbag} alt="put your stuff here!" />
